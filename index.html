@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="base.css">
+    <title>Incomparable</title>
+</head>
+<body>
+    <div class="first">
+        <div class="second">
+                <h2>Generate a <br><span>random password</span></h2>
+        </div>
+        <div class="third">
+            <h3>Never use an insecure password again.</h3>
+        </div>
+
+        <button onclick="createPassword()">Generate passwords</button>
+        <hr>
+
+        <div class="fourth">
+            <input class="fifth" type="text" id="pass">
+            <input class="sixth" type="text" id="passtwo">
+        </div>
+
+    </div>
+
+    <script>
+        const passBox = document.getElementById("pass")
+        const passB = document.getElementById("passtwo")
+        const length = 12;
+
+        const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        const lowerCase = "abcdefghigklmnopqrstuvwxyz";
+        const number = "0123456789";
+        const symbol = "@#$%^&*_+~?-=";
+
+        const allChars = upperCase + lowerCase + number + symbol;
+
+        function createPassword(){
+            let pass = "";
+            let passtwo = "";
+            pass += upperCase[Math.floor(Math.random() * upperCase.length)];
+            passtwo += upperCase[Math.floor(Math.random() * upperCase.length)];
+            pass += lowerCase[Math.floor(Math.random() * lowerCase.length)];
+            passtwo += lowerCase[Math.floor(Math.random() * lowerCase.length)];
+            pass += number[Math.floor(Math.random() * number.length)];
+            passtwo += number[Math.floor(Math.random() * number.length)];
+            pass += symbol[Math.floor(Math.random() * symbol.length)];
+            passtwo += symbol[Math.floor(Math.random() * symbol.length)];
+
+            while (length > pass.length) {
+                pass += allChars[Math.floor(Math.random() * allChars.length)];
+                passtwo += allChars[Math.floor(Math.random() * allChars.length)];
+            }
+            passBox.value = pass;
+            passB.value = passtwo;
+        }
+    </script>
+</body>
+</html>
