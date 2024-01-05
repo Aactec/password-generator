@@ -1,79 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Revalia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.first {
-    width: 700px;
+.PassGenerator {
+    width: 100%;
+    max-width: 700px;
     height: 420px;
     margin: 50px auto;  
-    background-color: #0e173f;
+    background-color: #0a112c;
+    border-radius: 12px;
+    padding: 60px;
 }
 
-.second {
-    padding-top: 50px;
-    padding-left: 30px;
-}
-
-h2 {
-    font-size: 35px;
+h1 {
+    font-size: 32px;
     color: white;
+    font-family: 'Russo One', sans-serif;
 }
 
-h3 {
-    padding-top: 15px;
-    padding-left: 30px;
-    font-size: 25px;
+p {
+    padding-top: 8px;
+    font-size: 20px;
     font-weight: bold;
     color: grey;
+    font-family: 'Revalia', sans-serif;
 }
 
 span {
-    color: rgb(129, 211, 129);
+    color: #58d658;
     font-size: 33px;
-}
-
-button {
-    margin-left: 30px;
-    margin-top: 15px;
-    padding: 10px 25px;
-    background-color: rgb(98, 160, 98);
-    border-radius: 3px;
-    color: white;
-    border: none;
-
-    font-family: 'Verdana';
-}
-
-button:hover {
-    cursor: pointer;
-    transition: 0.5s;
-    background-color: aqua;
-    color: black;
-    /* font-weight: bold; */
+    font-family: 'Russo One', sans-serif;
 }
 
 hr {
-    width: 70%;
-    margin-left: 30px;
-    margin-top: 20px;
+    width: 88%;
+    margin-top: 8px;
 }
 
-.fourth {
+.passwordBox {
     display: flex;
-    gap: 30px;
-    margin-left: 30px;
+    align-items: center;
+    background: #FFFFFF;
+    margin-top: 24px;
+    gap: 16px;
+    width: 100%;
+    max-width: 440px;
+    padding: 4px;
+    border-radius: 8px;
 }
 
-.fifth, .sixth {
-    width: 96px;
-    height: 30px;
-    background-color: #37416b;
-    justify-content: space-between;
-    padding: 10px 40px;
-    margin-top: 20px;
+input {
+    background: none;
+    padding: 10px 30px;
     border-radius: 5px;
-    color: white;
+    color: #59ff2f;
     outline: none;
     border: none;
+    font-size: 20px;
+    font-family: 'Revalia', sans-serif;
 }
+
+.passwordBox i{
+    font-size: 32px;
+    color: #59ff2f;
+    cursor: pointer;
+}
+
+button {
+    margin-top: 32px;
+    padding: 16px 24px;
+    background: #409e40;
+    border-radius: 3px;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Revalia', sans-serif;
+}
+
+button:hover {
+    background: #62a062;
+    cursor: pointer;
+    transition: 0.8s;
+}
+

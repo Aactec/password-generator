@@ -1,30 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Incomparable</title>
-</head>
-<body>
-    <div class="first">
-        <div class="second">
-                <h2>Generate a <br><span>random password</span></h2>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="./style.css" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!-- <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script> -->
+    </head>
+    <body>
+        <div class="PassGenerator">
+            <h1>Generate a <span>random password</span></h1>
+            <p>Never use an insecure password again.</p>
+            <hr>
+            <div class="passwordBox">
+                <input type="text" id="pass" placeholder="password">
+                <i onclick="copyPassword()" class='bx bxs-copy-alt'></i>
+            </div>
+            <button onclick="createPassword()">Generate passwords</button>
         </div>
-        <div class="third">
-            <h3>Never use an insecure password again.</h3>
-        </div>
-
-        <button onclick="createPassword()">Generate passwords</button>
-        <hr>
-
-        <div class="fourth">
-            <input class="fifth" type="text" id="pass">
-            <input class="sixth" type="text" id="passtwo">
-        </div>
-
-    </div>
-    
-    <script src="./index.js"></script>
-</body>
+        
+        <script src="./index.js"></script>
+    </body>
 </html>
