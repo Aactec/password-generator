@@ -37,7 +37,7 @@ span {
 .passwordBox {
     display: flex;
     align-items: center;
-    background: #FFFFFF;
+    /* background: #FFFFFF; */
     margin-top: 36px;
     justify-content: space-between;
     width: 100%;
@@ -56,7 +56,6 @@ input {
     font-size: 20px;
     font-family: 'Revalia', sans-serif;
     flex: 1;
-    height: 40px;
 }
 
 .passwordBox i{
@@ -138,7 +137,7 @@ hr {
         padding: 4px;
     }
     input {
-        padding: 12px 4px;
+        padding: 16px 4px;
         font-size: 14px;
     }
     .passwordBox i{
