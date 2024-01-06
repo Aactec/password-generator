@@ -11,15 +11,14 @@ body{
 }
 
 .PassGenerator {
-    width: 100%;
-    max-width: 700px;
-    height: 420px;
+    width: 64%;
+    /* max-width: 700px; */
+    height: 280px;
     margin: 60px auto;  
     background-color: #0a112c;
     border-radius: 12px;
     padding: 60px;
     box-shadow: inset 0 0 8px #FFFFFF;
-        box-sizing: border-box;
 }
 
 h1 {
@@ -37,11 +36,11 @@ span {
 .passwordBox {
     display: flex;
     align-items: center;
-    /* background: #FFFFFF; */
+    background: #FFFFFF;
     margin-top: 36px;
     justify-content: space-between;
-    width: 100%;
-    max-width: 440px;
+    width: 70%;
+    /* max-width: 440px; */
     padding: 8px 20px;
     border-radius: 8px;
 }
@@ -54,7 +53,7 @@ input {
     outline: none;
     border: none;
     font-size: 20px;
-    font-family: 'Revalia', sans-serif;
+    /* font-family: 'Revalia', sans-serif; */
     flex: 1;
 }
 
@@ -83,49 +82,40 @@ button:hover {
 }
 
 .bottomText {
-    margin-top: 100px;
-    text-align: center;
 }
 
 p {
     padding-top: 8px;
     font-size: 20px;
-    font-weight: bold;
     color: grey;
+    margin-top: 100px;
+    text-align: center;
     font-family: 'Revalia', sans-serif;
 }
 
-hr {
-    width: 99.7%;
-    margin-top: 24px;
-    border: 0.8px solid #33ff00;
-    outline: none;
-}
+
 
 @media screen and (max-width: 600px){
     .PassGenerator {
+        width: 80%;
         margin: 40px auto;
-        height: 360px;
         padding: 40px;
     }
     .passwordBox {
         padding-inline: 8px;
         justify-content: normal;
+        width: 100%;
     }
     input {
         font-size: 16px;
-        padding: 12px 16px;
+        /* padding: 12px 16px; */
     }
     button{
         padding: 12px 16px;
         font-size: 14px
     }
-    .bottomText {
-        margin-top: 60px;
-    }
     p {
         font-size: 14px;
-        margin-inline: 40px;
     }
 }
 
@@ -137,12 +127,8 @@ hr {
         padding: 4px;
     }
     input {
-        padding: 16px 4px;
+        /* padding: 16px 4px; */
         font-size: 14px;
-    }
-    .passwordBox i{
-        position: absolute;
-        right: 44px;
     }
     button{
         font-size: 10px
