@@ -43,6 +43,7 @@ span {
     /* max-width: 440px; */
     padding: 8px 20px;
     border-radius: 8px;
+    box-sizing: border-box;
 }
 
 input {
